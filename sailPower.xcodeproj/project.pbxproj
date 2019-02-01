@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79380CADEB2CB222B14CB68E /* Pods_sailPower.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB1DE953DD86444A3411D14 /* Pods_sailPower.framework */; };
 		A304B68421D1A4610065BB88 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304B68321D1A4610065BB88 /* settingsViewController.swift */; };
 		A304B68621DA83540065BB88 /* connectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304B68521DA83540065BB88 /* connectionController.swift */; };
 		A3357A5921CB330E00BC6FC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3357A5821CB330E00BC6FC2 /* AppDelegate.swift */; };
@@ -19,6 +20,12 @@
 		A3804F4221D04AF100051889 /* masterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3804F4121D04AF100051889 /* masterViewController.swift */; };
 		A3804F4421D04E1500051889 /* manualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3804F4321D04E1500051889 /* manualViewController.swift */; };
 		A3804F4621D04E3A00051889 /* autoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3804F4521D04E3A00051889 /* autoViewController.swift */; };
+		E6EE726A2204F97600E44A6B /* NMEAParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6EE72632204F97600E44A6B /* NMEAParser.cpp */; };
+		E6EE726B2204F97600E44A6B /* NMEAShared.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6EE72652204F97600E44A6B /* NMEAShared.cpp */; };
+		E6EE726C2204F97600E44A6B /* NMEAMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6EE72672204F97600E44A6B /* NMEAMessage.cpp */; };
+		E6EE72712204F98000E44A6B /* SeaTalkParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6EE726D2204F97F00E44A6B /* SeaTalkParser.cpp */; };
+		E6EE72722204F98000E44A6B /* SeaTalkMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6EE726F2204F98000E44A6B /* SeaTalkMessage.cpp */; };
+		E6EE72832204FF3E00E44A6B /* wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6EE72822204FF3E00E44A6B /* wrapper.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4CB1DE953DD86444A3411D14 /* Pods_sailPower.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sailPower.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		545918163AF224C2A9ED38F5 /* Pods-sailPower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sailPower.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sailPower/Pods-sailPower.debug.xcconfig"; sourceTree = "<group>"; };
+		5B9F22FE620B18D2BA0A1FD2 /* Pods-sailPower.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sailPower.release.xcconfig"; path = "Pods/Target Support Files/Pods-sailPower/Pods-sailPower.release.xcconfig"; sourceTree = "<group>"; };
 		A304B68321D1A4610065BB88 /* settingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
 		A304B68521DA83540065BB88 /* connectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = connectionController.swift; sourceTree = "<group>"; };
 		A3357A5521CB330E00BC6FC2 /* sailPower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sailPower.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +67,19 @@
 		A3804F4121D04AF100051889 /* masterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = masterViewController.swift; sourceTree = "<group>"; };
 		A3804F4321D04E1500051889 /* manualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = manualViewController.swift; sourceTree = "<group>"; };
 		A3804F4521D04E3A00051889 /* autoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = autoViewController.swift; sourceTree = "<group>"; };
+		E6EE72632204F97600E44A6B /* NMEAParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NMEAParser.cpp; sourceTree = "<group>"; };
+		E6EE72642204F97600E44A6B /* NMEAShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMEAShared.h; sourceTree = "<group>"; };
+		E6EE72652204F97600E44A6B /* NMEAShared.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NMEAShared.cpp; sourceTree = "<group>"; };
+		E6EE72662204F97600E44A6B /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		E6EE72672204F97600E44A6B /* NMEAMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NMEAMessage.cpp; sourceTree = "<group>"; };
+		E6EE72682204F97600E44A6B /* NMEAMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMEAMessage.h; sourceTree = "<group>"; };
+		E6EE72692204F97600E44A6B /* NMEAParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMEAParser.h; sourceTree = "<group>"; };
+		E6EE726D2204F97F00E44A6B /* SeaTalkParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SeaTalkParser.cpp; sourceTree = "<group>"; };
+		E6EE726E2204F97F00E44A6B /* SeaTalkMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeaTalkMessage.h; sourceTree = "<group>"; };
+		E6EE726F2204F98000E44A6B /* SeaTalkMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SeaTalkMessage.cpp; sourceTree = "<group>"; };
+		E6EE72702204F98000E44A6B /* SeaTalkParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeaTalkParser.h; sourceTree = "<group>"; };
+		E6EE72822204FF3E00E44A6B /* wrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = wrapper.cpp; sourceTree = "<group>"; };
+		E6EE72852204FFF900E44A6B /* sail-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sail-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79380CADEB2CB222B14CB68E /* Pods_sailPower.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,10 +111,13 @@
 		A3357A4C21CB330E00BC6FC2 = {
 			isa = PBXGroup;
 			children = (
+				E6EE724B2204F7C200E44A6B /* Libraries */,
 				A3357A5721CB330E00BC6FC2 /* sailPower */,
 				A3357A6C21CB330F00BC6FC2 /* sailPowerTests */,
 				A3357A7721CB330F00BC6FC2 /* sailPowerUITests */,
 				A3357A5621CB330E00BC6FC2 /* Products */,
+				E8F37068A2CA53669A29E28E /* Pods */,
+				E1961B025B5559F43704988B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +145,8 @@
 				A3804F4121D04AF100051889 /* masterViewController.swift */,
 				A3804F4321D04E1500051889 /* manualViewController.swift */,
 				A3804F4521D04E3A00051889 /* autoViewController.swift */,
+				E6EE72822204FF3E00E44A6B /* wrapper.cpp */,
+				E6EE72852204FFF900E44A6B /* sail-Bridging-Header.h */,
 			);
 			path = sailPower;
 			sourceTree = "<group>";
@@ -140,6 +169,57 @@
 			path = sailPowerUITests;
 			sourceTree = "<group>";
 		};
+		E1961B025B5559F43704988B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CB1DE953DD86444A3411D14 /* Pods_sailPower.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6EE724B2204F7C200E44A6B /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE72622204F94900E44A6B /* nmea */,
+				E6EE72612204F93E00E44A6B /* seatalk */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		E6EE72612204F93E00E44A6B /* seatalk */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE726F2204F98000E44A6B /* SeaTalkMessage.cpp */,
+				E6EE726E2204F97F00E44A6B /* SeaTalkMessage.h */,
+				E6EE726D2204F97F00E44A6B /* SeaTalkParser.cpp */,
+				E6EE72702204F98000E44A6B /* SeaTalkParser.h */,
+			);
+			path = seatalk;
+			sourceTree = "<group>";
+		};
+		E6EE72622204F94900E44A6B /* nmea */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE72672204F97600E44A6B /* NMEAMessage.cpp */,
+				E6EE72682204F97600E44A6B /* NMEAMessage.h */,
+				E6EE72632204F97600E44A6B /* NMEAParser.cpp */,
+				E6EE72692204F97600E44A6B /* NMEAParser.h */,
+				E6EE72652204F97600E44A6B /* NMEAShared.cpp */,
+				E6EE72642204F97600E44A6B /* NMEAShared.h */,
+				E6EE72662204F97600E44A6B /* types.h */,
+			);
+			path = nmea;
+			sourceTree = "<group>";
+		};
+		E8F37068A2CA53669A29E28E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				545918163AF224C2A9ED38F5 /* Pods-sailPower.debug.xcconfig */,
+				5B9F22FE620B18D2BA0A1FD2 /* Pods-sailPower.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3357A7D21CB330F00BC6FC2 /* Build configuration list for PBXNativeTarget "sailPower" */;
 			buildPhases = (
+				60F70B2E217F14E46DEF2773 /* [CP] Check Pods Manifest.lock */,
 				A3357A5121CB330E00BC6FC2 /* Sources */,
 				A3357A5221CB330E00BC6FC2 /* Frameworks */,
 				A3357A5321CB330E00BC6FC2 /* Resources */,
+				9173B252DC332392C9B47719 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,6 +290,7 @@
 				TargetAttributes = {
 					A3357A5421CB330E00BC6FC2 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					A3357A6821CB330F00BC6FC2 = {
 						CreatedOnToolsVersion = 10.1;
@@ -266,16 +349,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		60F70B2E217F14E46DEF2773 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sailPower-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9173B252DC332392C9B47719 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-sailPower/Pods-sailPower-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sailPower/Pods-sailPower-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A3357A5121CB330E00BC6FC2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6EE726C2204F97600E44A6B /* NMEAMessage.cpp in Sources */,
+				E6EE72722204F98000E44A6B /* SeaTalkMessage.cpp in Sources */,
 				A3804F4221D04AF100051889 /* masterViewController.swift in Sources */,
+				E6EE726B2204F97600E44A6B /* NMEAShared.cpp in Sources */,
 				A3357A5921CB330E00BC6FC2 /* AppDelegate.swift in Sources */,
+				E6EE72712204F98000E44A6B /* SeaTalkParser.cpp in Sources */,
 				A3804F4621D04E3A00051889 /* autoViewController.swift in Sources */,
 				A304B68621DA83540065BB88 /* connectionController.swift in Sources */,
 				A3357A8821CB5EDF00BC6FC2 /* mathStuff.swift in Sources */,
+				E6EE72832204FF3E00E44A6B /* wrapper.cpp in Sources */,
+				E6EE726A2204F97600E44A6B /* NMEAParser.cpp in Sources */,
 				A3804F4421D04E1500051889 /* manualViewController.swift in Sources */,
 				A304B68421D1A4610065BB88 /* settingsViewController.swift in Sources */,
 			);
@@ -450,8 +586,10 @@
 		};
 		A3357A7E21CB330F00BC6FC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 545918163AF224C2A9ED38F5 /* Pods-sailPower.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = sailPower/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -460,6 +598,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = WSE.sailPower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "sailpower/sail-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -467,8 +607,10 @@
 		};
 		A3357A7F21CB330F00BC6FC2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B9F22FE620B18D2BA0A1FD2 /* Pods-sailPower.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = sailPower/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -477,6 +619,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = WSE.sailPower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "sailpower/sail-Bridging-header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

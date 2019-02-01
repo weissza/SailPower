@@ -7,23 +7,14 @@
 //
 
 import Foundation
-
+import CocoaAsyncSocket
 
 class connectionController{
-    private var socket: SocketPort?
-    
-    
-    public func connectToHost(host: String, port: UInt16){
-        socket = SocketPort.init(remoteWithTCPPort: port, host: host)
-        if socket == nil {
-            NSLog("error opening socket\n")
-        }
-    }
-    
-    public func isConnected() -> Bool? {
+    private var socket: GCDAsyncSocket?
+    //private var parser: NMEAParser?
+    init() {
         
-        return socket?.isValid
+        
     }
-    
     
 }
